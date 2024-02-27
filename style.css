@@ -1,0 +1,143 @@
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: ;
+}
+
+body{
+    background-color: var(--Light-grayish-blue);
+}
+.container{
+    display: grid;
+    grid-template-columns: 77% 23%;
+    grid-gap: 2rem;
+    margin: 3rem 10rem 1rem;
+}
+
+
+
+.left .up{
+    display: grid;
+    grid-template-columns: 68% 32%;
+}
+.left .down{
+    display: grid;
+    grid-template-columns: 32% 68%;
+}
+.details{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.details img{
+    border-radius: 50%;
+    margin-right: 1rem;
+    height: 2.5rem;
+}
+
+.content{
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    color: white;
+}
+
+.content h4{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+
+}
+.content p{
+    font-size: 0.9rem;
+    color: var(--Light-gray);
+
+}
+
+.daniel{
+    background-color: var(--Moderate-violet);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 60px;
+}
+
+.daniel img{
+    border: 2px solid var(--Light-gray);
+}
+
+.jonathan{
+    background-color: var(--Very-dark-grayish-blue);
+}
+.jonathan img{
+    border: 2px solid var(--Light-gray);
+}
+.jeanette{
+    background-color: white;
+    color: var(--Very-dark-blackish-blue);
+}
+
+.patrick{
+    background-color: var(--Very-dark-blackish-blue);
+}
+.patrick img{
+    border: 2px solid var(--Moderate-violet);
+}
+.kira p{
+    color: var(--Very-dark-blackish-blue);
+}
+.jeanette p{
+    color: var(--Very-dark-blackish-blue);
+}
+.kira{
+    margin-left: -1rem;
+    background-color: white;
+    color: var(--Very-dark-blackish-blue);
+    
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+
+@media screen and (max-width: 1030px) {
+    .container{
+        display: grid;
+        grid-template-columns: 77% 23%;
+        grid-gap: 2rem;
+        margin: 3rem 0rem 1rem;
+    }
+    
+    
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 1rem;
+    }
+    
+.left .up{
+    display: flex;
+    flex-direction: column;
+}
+.left .down{
+    display: flex;
+    flex-direction: column;
+}
+.kira{
+    margin-left: 0rem;
+    background-color: white;
+    color: var(--Very-dark-blackish-blue);
+    
+}
+    
+    
+}
